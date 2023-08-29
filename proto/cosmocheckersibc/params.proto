@@ -1,0 +1,12 @@
+syntax = "proto3";
+package malakaja.cosmocheckersibc.cosmocheckersibc;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/malakaja/cosmo-checkers-ibc/x/cosmocheckersibc/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

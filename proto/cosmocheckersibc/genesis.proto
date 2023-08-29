@@ -1,0 +1,14 @@
+syntax = "proto3";
+package malakaja.cosmocheckersibc.cosmocheckersibc;
+
+import "gogoproto/gogo.proto";
+import "cosmocheckersibc/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/malakaja/cosmo-checkers-ibc/x/cosmocheckersibc/types";
+
+// GenesisState defines the cosmocheckersibc module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
